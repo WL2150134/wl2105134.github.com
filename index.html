@@ -2,17 +2,86 @@
 <html>
 
 <head>
-    <title>My Profile</title>
+    <title>Personal Profile</title>
+    <style>
+        body {
+            max-width: 1920px;
+            background-color: aliceblue;
+            text-align: center;
+        }
+
+        .container {
+            display: inline-block;
+        }
+
+        .container2 {
+            display: flex;
+        }
+
+        .box {
+            margin: 30px;
+        }
+
+        h1 {
+            /* border: 3px black solid; */
+            margin-top: 10px;
+            padding: 20px;
+            font-size: 50px;
+        }
+        b{
+            font-size: 22px;
+        }
+        p{
+            font-size: 20px;
+        }
+        a{
+            font-size: 20px;
+        }
+    </style>
 </head>
 
-<body align="center">
-    <img src="images/my.jpeg" alt="My Selfie">
-    <p>Yong Wai Loon</p>
-    <p>yongwailoon5383@e.newera.edu.my</p>
-    <div><a href="https://yongwailoon.github.io/Week2/" target="_blank">Week 2</a></div>
-    <div><a href="https://yongwailoon.github.io/Week3/" target="_blank">week 3</a></div>
-    <div><a href="https://yongwailoon.github.io/Week3/apple.html" target="_blank">week 3 Apple</a></div>
-    <div><a href="https://yongwailoon.github.io/Week3/jameswoo.github.io-main/" target="_blank">week 3 Exercise 2</a></div>
+<body>
+    <div class="container">
+        <h1>My Web Design Profile</h1>
+        <div>
+            <img src="images/mypic.jpeg" alt="My Selfie" height="200px" style="border: 2px black solid;">
+            <div style="margin: 20px;">
+                <b>Student Name: </b>
+                <p>Yong Wai Loon</p>
+                <b>Student ID: </b>
+                <p>2150134-BCS</p>
+                <b>Email: </b>
+                <p>yongwailoon5383@e.newera.edu.my</p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="box">
+                <b>Week 2 Tutorial</b>
+                <ul>
+                    <li><a href="https://yongwailoon.github.io/Week2/" target="_blank">Index.html</a></li>
+                    <li><a href="https://yongwailoon.github.io/Week2/" target="_blank">About.html</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <b>Week 3 Class Tutorial</b>
+                <ul>
+                    <li><a href="https://yongwailoon.github.io/Week3/" target="_blank">Index.html</a></li>
+                    <li><a href="https://yongwailoon.github.io/Week3/apple.html" target="_blank">Apple.html</a></li>
+                    <li><a href="https://yongwailoon.github.io/Week3/jameswoo.github.io-main/" target="_blank">Heroes</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <b>Week 3 Homework</b>
+                <ul>
+                    <li><a href="https://yongwailoon.github.io/Week3/homework/homework1.html" target="_blank">Homework 1</a></li>
+                    <li><a href="https://yongwailoon.github.io/Week3/homework/homework2.html" target="_blank">Homework 2</a></li>
+                    <li><a href="https://yongwailoon.github.io/Week3/homework/homework3.html" target="_blank">Homework 3</a></li>
+                    <li><a href="https://yongwailoon.github.io/Week3/homework/homework4.html" target="_blank">Homework 4</a></li>
+                    <li><a href="https://yongwailoon.github.io/Week3/homework/homework5.html" target="_blank">Homework 5</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
