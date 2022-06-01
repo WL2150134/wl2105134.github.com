@@ -6,14 +6,19 @@
     <style>
         body {
             max-width: 1920px;
-            background-color: aliceblue;
+            background-color: #FBEEE6;
             text-align: center;
         }
-
         .container {
             display: inline-block;
         }
-
+        .profile{
+            display: flex;
+            margin: 40px 0;
+        }
+        .profile div{
+            padding: 0 40px;
+        }
         .container2 {
             display: flex;
         }
@@ -28,14 +33,16 @@
             padding: 20px;
             font-size: 50px;
         }
+
         b{
             font-size: 22px;
         }
         p{
             font-size: 20px;
         }
-        a{
+        ul li{
             font-size: 20px;
+            line-height: 40px;
         }
     </style>
 </head>
@@ -43,15 +50,12 @@
 <body>
     <div class="container">
         <h1>My Web Design Profile</h1>
-        <div>
-            <img src="images/mypic.jpeg" alt="My Selfie" height="200px" style="border: 2px black solid;">
+        <div class="profile">
+            <div><img src="images/mypic.jpeg" alt="My Selfie" height="200px"></div>
             <div style="margin: 20px;">
-                <b>Student Name: </b>
-                <p>Yong Wai Loon</p>
-                <b>Student ID: </b>
-                <p>2150134-BCS</p>
-                <b>Email: </b>
-                <p>yongwailoon5383@e.newera.edu.my</p>
+                <p><b>Student Name: </b>Yong Wai Loon</p>
+                <p><b>Student ID: </b>2150134-BCS</p>
+                <p><b>Email: </b>yongwailoon5383@e.newera.edu.my</p>
             </div>
         </div>
         <div class="container2">
