@@ -1,10 +1,12 @@
 #container{
-    background-color: #f1f1f1;
+    background-color: #008080;
     max-width: 1024px;
     margin: auto;
     padding: 10px;
 
 }
+
+/* Header */
 .header{
     background-image: url("../images/forest_background.jpg");
     background-size: cover;
@@ -19,11 +21,13 @@
 .header img{
     margin: auto;
 }
+
+/* Navigation Bar */
 .topnav{
     display: flex;
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
-    background-color: #bb99ff;
+    background-color: #b3e6b3;
     justify-content: center;
     align-items: center;
 
@@ -33,6 +37,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: 800;
     /* width: 200px; */
 }
 .topnav a:hover{
@@ -40,20 +45,45 @@
     color: black;
     text-decoration: underline;
 }
+
+/* Content */
 .row{
     display: flex;
-    /* padding: 20px; */
     /* text-align: justify; */
-    /* background-color: bisque; */
+    background-color: bisque;
 }
 .column{
-    padding: 20px;
-    width: 33.33%;
-}
-#column1{
+    padding: 10px;
     width: 25%;
 }
-@media screen and (max-width: 600px){
+#column1{
+    width: 50%;
+}
+
+/* Footer */
+.footer{
+    background-color: #f1f1f1;
+    display: flex;
+    text-align: center;
+}
+.column2{
+    width: 25%;
+    /* padding: 10px; */
+}
+/* Tablet */
+@media screen and (max-width: 800px) and (min-width: 480px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .column{
+        width: 45%;
+    }
+    #column1{
+        width: 45%;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 480px){
     .row{
         flex-direction: column;
     }
