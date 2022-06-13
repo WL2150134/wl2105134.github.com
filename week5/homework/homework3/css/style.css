@@ -1,0 +1,32 @@
+#container{
+    background-color: #b3b3b3;
+    max-width: 1024px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#header{
+    background-color: aqua;
+}
+
+.content{
+    display: flex;
+}
+#menu{
+    background-color: blue;
+    width: 30%;
+}
+.right{
+    display: inline-block;
+    width: 70%;
+}
+.mainr{
+    display: flex;
+}
+.box{
+    width: 50%;
+}
+#footer{
+    background-color: blueviolet;
+}
