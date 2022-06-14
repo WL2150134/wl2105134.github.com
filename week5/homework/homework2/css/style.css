@@ -54,11 +54,11 @@
 #tcontent{
     width: 60%;
     padding-right: 10px;
-    border-right: solid #202832 5px;
+    border-right: solid #202832 7.5px;
 }
 #sidebar{
     width: 40%;
-    border-left: solid #202832 5px;
+    border-left: solid #202832 7.5px;
 }
 #footer{
     background-color: #7f1309;
@@ -66,4 +66,26 @@
 #footer h1{
     margin: 1.5% 0 0 0;
     padding: 5px;
+}
+@media screen and (max-width: 600px){
+    #logo img{
+        width: 65%;
+    }
+    .content{
+        flex-direction: column;
+    }
+
+    #tcontent{
+        width: 100%;
+        padding-right: 10px;
+        border-right: none;
+        border-top: solid #202832 5px;
+        border-bottom: solid #202832 5px;
+    }
+    #sidebar{
+        width: 100%;
+        border-left: none;
+        border-top: solid #202832 5px;
+        border-bottom: solid #202832 5px;
+    }
 }

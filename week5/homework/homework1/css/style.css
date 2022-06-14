@@ -33,23 +33,31 @@
 
 .flat{
     display: flex;
-    margin: 1.5% 0;
+    margin: 2% 0;
 }
 
 .fbox{
     width: 25%;
     background-color: #7f1309;
-    border:solid #202832 5px; 
+    /* border:solid #202832 5px; */
+}
+#fbox2{
+    border-left: solid #202832 12.5px;
+    border-right: solid #202832 7.5px;
+}
+#fbox3{
+    border-left: solid #202832 7.5px;
+    border-right: solid #202832 12.5px;
 }
 .content{
     display: flex;
-    margin: auto;
+    margin: 1.5% 0;
 }
 #content{
     width: 70%;
     background-color: #7f1309;
     padding: 5px;
-    border-right: solid #202832 10px;
+    border-right: solid #202832 15px;
 }
 #sbar{
     width: 30%;
@@ -60,8 +68,8 @@
 }
 
 #footer h1{
-    padding: 5px;
-    margin: 1.5%;
+    padding: 15px;
+    margin: 2%;
 }
 
 /* Mobile */
@@ -70,18 +78,31 @@
         flex-direction: column;
     }
     .fbox{
-        width: 99%;
+        border: none;
+        border-top: solid #202832 5px;
+        border-bottom: solid #202832 5px;
+        width: 100%;
+    }
+    #fbox2{
+        border: none;
+        border-top: solid #202832 5px;
+        border-bottom: solid #202832 5px;
+    }
+    #fbox3{
+        border: none;
+        border-top: solid #202832 5px;
+        border-bottom: solid #202832 5px;
     }
     .content{
         flex-direction: column;
     }
     #content{
-        width: 95%;
-        margin: auto;
-        border:solid #202832 5px;
+        width: 98%;
+        margin: 0 0 1.5% 0;
+        border: none;
     }
     #sbar{
         width: 100%;
-        margin: 1.5% 0 0 0;
+        margin: 1.5% 0;
     }
 }
