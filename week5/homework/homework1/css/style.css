@@ -23,18 +23,26 @@
     padding: 10px;
 }
 #slideshow{
+    width: 1024px;
+    height: 576px;
+    margin-left: auto;
+    margin-right: auto;
     overflow:hidden;
 }
 #slideshow figure{
     position: relative;
     width: 400%;
+    height: 576px;
     margin: 0;
     left: 0;
     animation: 10s slider infinite;
 }
 #slideshow figure img{
     float: left;
-    width: 1024px;
+    margin: 0px;
+    padding: 0px;
+    max-width: 1024px;
+    max-height: 576px;
 }
 /* Slide Animation */
 @keyframes slider{
