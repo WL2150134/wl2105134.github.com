@@ -47,7 +47,6 @@
 #slideshow figure{
     position: relative;
     width: 400%;
-    height: 576px;
     margin: 0;
     left: 0;
     animation: 10s slider infinite;
@@ -56,8 +55,6 @@
     float: left;
     margin: 0px;
     padding: 0px;
-    max-width: 1024px;
-    max-height: 576px;
 }
 /* Slide Animation */
 @keyframes slider{
@@ -131,5 +128,11 @@
         border-left: none;
         border-top: solid #202832 5px;
         border-bottom: solid #202832 5px;
+    }
+    #slideshow{
+        height: 337.5px;
+    }
+    #slideshow figure img{
+        width: 600px;
     }
 }
