@@ -26,10 +26,10 @@ body{
 }
 /* Section 1 */
 #home{
-    background-image: url("../images/bg1.png");
+    background-image: url("../images/bg1.png"), url("../images/footer.png");
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 60%;
+    background-position: top right, bottom;
+    background-size: 60%, 100%;
 }
 /* Header */
 #header{
@@ -271,7 +271,7 @@ body{
 }
 .box2 h2{
     font-size: 2em;
-    margin: 13% 0;
+    margin: 13% 0 30% 0;
     color: #1d11bd;
 }
 .detailsbtn1{
@@ -366,8 +366,9 @@ input[type=email]{
 }
 .footer{
     margin-top: 30%;
-    margin-bottom: 5%;
+    margin-bottom: 12px;
     width: 20%;
+    color: white;
 }
 .footer h1{
     font-size: 2.5em;
@@ -375,6 +376,10 @@ input[type=email]{
 }
 .footer h2{
     margin-top: 0;
+}
+.footer img{
+    height: 16px;
+    padding: 12px 12px 0 12px;
 }
 #f1{
     text-align: center;
@@ -386,9 +391,14 @@ input[type=email]{
     text-decoration: none;
     padding: 0;
     margin: 10px 0;
-    /* color: white; */
+    color: white;
+    font-size: 0.95em;
+}
+.footer h3{
+    margin: 12px 0;
 }
 .footer p{
+    font-size: 0.9em;
     margin: 10px 0;
 }
 #f3{
