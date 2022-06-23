@@ -1,3 +1,12 @@
+
+/* button to middle
+margin: auto;
+*/
+
+/* button text to center */
+/* justify-content:center;
+align-items:center; */
+
 body{
     max-width: 1280px;
     color: #424959;
