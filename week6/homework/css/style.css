@@ -73,10 +73,11 @@ body{
 
 /* Left side icon */
 .lefticon{
-    position: fixed;
+    position: absolute;
     top: 40%;
     /* left: -5%; */
     text-align: center;
+    display: inline-block;
 }
 .lefticon ul li{
     margin: 80% 0;
@@ -175,6 +176,9 @@ body{
     height: 60%;
 }
 /* Section 2 */
+#section2{
+    background-image: url("../images/who\ we\ are\ background@2x.png");
+}
 #header2{
     margin: 10% 0 0 5%;
 }
@@ -188,16 +192,16 @@ body{
 }
 #row1{
     display: flex;
-}
-#row2{
-    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .box{
-    width: 33.33%;
+    background-color: white;
+    width: 24.3%;
     padding: 2%;
     box-shadow: 0 3px 10px 0 rgb(0 0 0 / 0.2);
     border-radius: 25px;
-    margin: 3.5%;
+    margin: 2.5%;
     position: relative;
     text-align: center;
 }
@@ -210,15 +214,6 @@ body{
     font-size: 0.85em;
 }
 #row1 p{
-    text-align: left;
-    font-size: 0.7em;
-}
-#row2 h3{
-    margin: 12% 0;
-    text-align: left;
-    font-size: 0.85em;
-}
-#row2 p{
     text-align: left;
     font-size: 0.7em;
 }
@@ -364,7 +359,6 @@ input[type=email]{
 }
 #footer{
     display: flex;
-    bottom: 6%;
     width: 100%;
 }
 .footer{
@@ -381,7 +375,7 @@ input[type=email]{
     margin-top: 0;
 }
 .footer img{
-    height: 16px;
+    height: 12px;
     padding: 12px 12px 0 12px;
 }
 #f1{
@@ -405,13 +399,16 @@ input[type=email]{
     margin: 10px 0;
 }
 #f3{
-    width: 30%;
+    width: 25%;
 }
 
 /* Tablet */
-@media screen and (min-width:600px) and (max-width: 800px){
+@media screen and (min-width:600px) and (max-width: 850px){
     #home{
         background-image: none, url("../images/footer.png");
+    }
+    .lefticon{
+        display: none;
     }
     #header{
         height: 90px;
@@ -462,18 +459,10 @@ input[type=email]{
     }
     
     /* Section 2 */
-    #row1{
-        flex-direction: column;
-        margin: 0 5%;
-    }
-    #row2{
-        flex-direction: column;
-        margin: 0 5%;
-    }
     .box{
-        width: 92%;
+        width: 35%;
         padding: 4%;
-        margin: 3.5% 0;
+        /* margin: 3.5% 0; */
     }
     .box img{
         height: 100px;
@@ -547,27 +536,34 @@ input[type=email]{
         font-size: 0.8em;
     }
     .footer h1{
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     .footer h2{
-        font-size: 1.2em;
-    }
-    .footer h3{
         font-size: 1em;
     }
-    .footer ul,li, a{
+    .footer h3{
         font-size: 0.9em;
     }
+    .footer ul,li, a{
+        font-size: 0.82em;
+    }
     .footer p{
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 }
 
 
 /* Mobile */
 @media screen and (max-width: 600px){
+    #home{
+        background-image: none, url("../images/footer.png");
+    }
     #header{
         height: 70px;
+        padding: 2%;
+    }
+    .lefticon{
+        display: none;
     }
     #logo{
         width: 40%;
@@ -582,8 +578,10 @@ input[type=email]{
         width: 60%;
     }
     .nav a{
-        padding: 5px 7px;
+        padding: 3px 5px;
+        margin: 0 2px;
         font-size: 0.8em;
+        color: black;
     }
     /* Section 1 */
     .content{
@@ -621,7 +619,7 @@ input[type=email]{
         margin: 0 5%;
     }
     .box{
-        width: 95%;
+        width: 85%;
         padding: 4%;
         margin: 3.5% 0;
     }
@@ -634,13 +632,6 @@ input[type=email]{
         margin: 3% 0;
     }
     #row1 p{
-        text-align: left;
-        margin-bottom: 12%;
-    }
-    #row2 h3{
-        margin: 3% 0;
-    }
-    #row2 p{
         text-align: left;
         margin-bottom: 12%;
     }
@@ -698,19 +689,41 @@ input[type=email]{
     #mailbtn{
         font-size: 0.8em;
     }
-    .footer h1{
-        font-size: 1.8em;
+    .footer{
+        margin-top: 30%;
+        margin-bottom: 12px;
+        width: 20%;
+        color: white;
     }
-    .footer h2{
+    .footer h1{
         font-size: 1.2em;
     }
+    .footer h2{
+        font-size: 0.8em;
+    }
     .footer h3{
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .footer ul,li, a{
-        font-size: 0.9em;
+        font-size: 0.8em;
+        margin: 7px;
     }
     .footer p{
-        font-size: 0.7em;
+        font-size: 0.55em;
+        margin: 7px;
+    }
+    .footer{
+        margin-bottom: 5px;
+    }
+    .footer img{
+        height: 12px;
+        padding: 8px 8px 0 8px;
+        color: #1d11bd;
+    }
+    #f3{
+        width: 25%;
+    }
+    #f4{
+        width: 35%;
     }
 }
