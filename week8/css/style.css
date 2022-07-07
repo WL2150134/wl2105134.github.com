@@ -1,0 +1,83 @@
+body{
+    max-width: 600px;
+    margin: auto;
+    color: #598867;
+}
+form{
+    background-color: #ddf3ee;
+}
+input[type=text]{
+    margin: 8px 0;
+    padding: 8px 10px;
+    height: 15px;
+}
+legend{
+    font-size: 2em;
+}
+#ep{
+    width: 100%;
+    display: flex;
+}
+#email{
+    width: 52%;
+}
+#phone{
+    width: 50%;
+    margin-left: 2%;
+}
+input[type=email]{ 
+    width: 88%; 
+    margin: 8px 0;
+    padding: 8px 10px;
+    height: 15px;
+}
+input[type=tel]{
+    width: 91%;
+    margin: 8px 0;
+    padding: 8px 10px;
+    height: 15px;
+}
+input[type=radio]{
+    margin: 8px 0;
+}
+label {
+    margin: 0 30px 0 5px;
+
+}
+input[type=submit]{
+    border-radius: 25px;
+    padding: 8px 25px;
+    border: none;
+    color: white;
+    background-color: #23622b;
+    cursor: pointer;
+}
+#btncenter{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+p{
+    margin: 12px 0 0 0;
+}
+.name{
+    width: 44%;
+}
+#lname{
+    margin-left: 2.8%;
+}
+.street{
+    width: 96%;
+}
+.street2{
+    width: 44%;
+}
+#s2{
+    margin-left: 2.8%;
+}
+select{
+    width: 48.2%;
+    margin: 8px 0 0 2.8%;
+    padding: 8px 8px;
+    height: 34px;
+}
