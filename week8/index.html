@@ -11,12 +11,12 @@
         <fieldset>
             <legend>Farmer Registration Form</legend>
             <p>Name</p> 
-            <input type="text" class="name" name="First" placeholder="First">
-            <input type="text" class="name" id="lname" name="Last" placeholder="Last"> <br>
+            <input type="text" class="name" name="First" placeholder="First" required>
+            <input type="text" class="name" id="lname" name="Last" placeholder="Last" required> <br>
             <div id="ep">
                 <div id="email">
                     <p>Email</p>
-                    <input type="email">
+                    <input type="email" required>
                 </div>
                 <div id="phone">
                     <p>Phone</p>
@@ -36,7 +36,7 @@
             <input type="text" class="street2" placeholder="City">
             <input type="text" class="street2" id="s2" placeholder="Region"><br>
             <input type="text" class="street2" placeholder="Postal / ZIP Code">
-            <select id="country" name="country" class="form-control">
+            <select id="country" name="country" class="form-control" required>
                 <option value="Select Here" selected disabled hidden>Country</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
