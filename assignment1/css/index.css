@@ -430,17 +430,19 @@ a {
 
     /* Navigation Bar*/
     #logo {
-        width: 40%;
+        width: 30%;
     }
 
     #logo img {
-        width: 22%;
+        width: 25%;
     }
 
     .navbar ul li {
         display: none;
     }
-
+    .navbar{
+        height: 3.5vh;
+    }
     .icon {
         position: absolute;
         right: 0;
@@ -450,7 +452,7 @@ a {
     }
 
     .icon img {
-        width: 45%;
+        width: 35%;
         margin-right: 6%;
         float: right;
     }
@@ -631,13 +633,17 @@ a {
 
     /* Navigation Bar*/
     #logo {
-        width: 40%;
+        width: 15%;
     }
-
+    #logo img{
+        width: 50%;
+    }
     .navbar ul li {
         display: none;
     }
-
+    .navbar{
+        height: 3vh;
+    }
     .icon {
         position: absolute;
         right: 0;
@@ -647,7 +653,7 @@ a {
     }
 
     .icon img {
-        width: 50%;
+        width: 35%;
         margin-right: 6%;
         float: right;
     }
