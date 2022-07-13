@@ -310,8 +310,161 @@ a {
     }
 }
 
-/* Mobile */
-@media screen and (min-width:320px) and (max-width: 600px) {
+/* Mobile 1*/
+@media screen and (min-width:480px) and (max-width: 600px) {
+
+    /* Navigation Bar*/
+    #logo {
+        width: 40%;
+    }
+
+    #logo img {
+        width: 22%;
+    }
+
+    .navbar ul li {
+        display: none;
+    }
+
+    .icon {
+        position: absolute;
+        right: 0;
+        display: block;
+        margin: auto;
+        width: 20%;
+    }
+
+    .icon img {
+        width: 45%;
+        margin-right: 6%;
+        float: right;
+    }
+
+    /* Mobile Menu */
+    .overlay {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 2em;
+        font-family: 'Croissant One', cursive;
+        color: #D9D9D9;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #A4773D;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        color: #A4773D;
+    }
+
+
+    /* Content */
+    .text h1 {
+        font-size: 1.6em;
+    }
+
+    .text p {
+        font-size: 0.95em;
+    }
+
+    /* Photos */
+    .photos {
+        margin: 3% 0;
+    }
+
+    .set1 {
+        flex-direction: column;
+    }
+
+    #p1 {
+        margin-right: 0;
+        margin-bottom: 3%;
+    }
+
+    .set2 {
+        flex-direction: column;
+    }
+
+    #p6 {
+        margin-left: 0;
+        margin-top: 3%;
+    }
+
+    /* Footer */
+    #line2 {
+        width: 83%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footertext {
+        width: 100%;
+    }
+
+    #quicklink {
+        display: none;
+    }
+
+    #hours {
+        width: 80%;
+        margin: 2.5%;
+    }
+
+    #hours p {
+        font-size: 0.8em;
+    }
+
+    #footerlogo {
+        display: flex;
+        width: 90%;
+    }
+
+    #copyright {
+        width: 60%;
+    }
+
+    #footerlogo p {
+        font-size: 0.7em;
+    }
+
+    #footerlogo img {
+        width: 40%
+    }
+}
+
+/* Mobile 2*/
+@media screen and (min-width:320px) and (max-width: 480px) {
 
     /* Navigation Bar*/
     #logo {
