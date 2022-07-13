@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wedding Photograph</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Marcellus&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAVIGATION BAR Desktop-->
+        <section>
+            <div class="banner">
+                <img src="images/home1.jpg" alt="photo 1">
+                <div id="nav_con">
+                    <div class="navbar">
+                        <div id="logo">
+                            <img src="images/logo.png" alt="LOGO">
+                        </div>
+                        <!-- Only Display on Mobile Version -->
+                        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                            <img src="images/menu.png" alt="menu">
+                        </a>
+                        <!-- Only Display on Desktop Version -->
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="photos.html">PHOTOS</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">VENUE</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">HOME</a>
+                    <a href="photos.html">PHOTOS</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">VENUE</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
+        </section>
+        <!-- HOME 2 SECTION -->
+        <section>
+            <div id="logo2">
+                <img src="images/second logo.png" alt="LOGO2">
+            </div>
+            <div class="text">
+                <h1>YOUR WEDDING SHOULD BE UTTERLY
+                    <br>UNFORGETTABLE, DEEPLY ROMANTIC, EXQUISITELY
+                    <br>BEAUTIFUL AND ENTIRELY “YOU”
+                </h1>
+            </div>
+            <div class="pic">
+                <img src="images/home2.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1>WE HELP YOU TO CAPTURE
+                    <br>YOUR LOVE STORY
+                    <br>AND THIS SWEETEST MOMENT
+                </h1>
+                <div id="line1">
+                </div>
+            </div>
+        </section>
+        <!-- PHOTO SECTION -->
+        <section>
+            <div id="imgcenter">
+                <div class="photo">
+                    <div class="imgs"><img src="images/home3.jpg" alt=""></div>
+                    <div class="imgs"><img src="images/home4.jpg" alt=""></div>
+                    <div class="imgs"><img src="images/home5.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="morebtn">
+                <button onclick="">
+                    <p>SEE MORE</p>
+                </button>
+            </div>
+        </section>
+        <!-- CONTACT US SECTION -->
+        <section>
+            <div class="contact">
+                <div id="contact_img"><img src="images/cnt.jpg" alt=""></div>
+                <div id="contact_us">
+                    <h1>Contact Us</h1>
+                    <p>Please fill out the form if you are intersting in our sevices. We will contact you to tell more
+                        details.</p>
+                    <form action="">
+                        <p>Your Name</p>
+                        <input type="text" placeholder="Michael Lee" required>
+                        <p>Your Phone</p>
+                        <input type="tel" placeholder="01x-xxxx xxxx" required>
+                        <p>Your Email</p>
+                        <input type="text" placeholder="michael@gmail.com" required>
+                        <p>Your Message</p>
+                        <textarea rows="4" cols="50" name="comment" form="usrform"
+                            placeholder="Write down something you want to ask"></textarea>
+                        <div id="submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section>
+            <div id="centerline">
+                <div id="line2"></div>
+            </div>
+            <div class="footer">
+                <div id="footerlogo">
+                    <div><img src="images/logo.png" alt="Logo"></div>
+                    <div id="copyright">
+                        <p>Powered by Yong</p>
+                        <p>2022 B&Y Copyright</p>
+                    </div>
+                </div>
+                <div class="footertext">
+                    <div id="quicklink">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="photos.html">PHOTOS</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">VENUE</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div id="hours">
+                        <h3>Hours</h3>
+                        <p>Weekdays: 09:00 - 18:00</p>
+                        <p>Weekend: 09:00 - 18:00
+                            <br>(Online Only)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>

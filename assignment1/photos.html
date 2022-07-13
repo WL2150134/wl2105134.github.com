@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/photo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Marcellus&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <section>
+            <div id="nav_con">
+                <div class="navbar">
+                    <div id="logo">
+                        <img src="images/logo.png" alt="LOGO">
+                    </div>
+                    <!-- Only Display on Mobile Version -->
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <img src="images/menu.png" alt="menu">
+                    </a>
+                    <!-- Only Display on Desktop Version -->
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="photos.html">PHOTOS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">VENUE</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">HOME</a>
+                    <a href="photos.html">PHOTOS</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">VENUE</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
+        </section>
+        <!-- Content -->
+        <section>
+            <div class="text">
+                <h1>Photos</h1>
+                <p>Love is like a butterfly. It goes where it
+                    <br> pleases and it pleases where it goes.
+                </p>
+            </div>
+            <div class="centerline">
+                <div class="line"></div>
+            </div>
+
+            <!-- Photos -->
+            <div class="photos">
+                <div class="set1">
+                    <div id="p1">
+                        <img src="images/photo1.jpg" alt="Wedding Photo 1">
+                    </div>
+                    <div class="g1">
+                        <div id="p2">
+                            <img src="images/photo2.jpg" alt="Wedding Photo 2">
+                        </div>
+                        <div id="p3">
+                            <img src="images/photo3.jpg" alt="Wedding Photo 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photos">
+                <div class="set2">
+                    <div class="g2">
+                        <div id="p4">
+                            <img src="images/photo4.jpg" alt="Wedding Photo 4">
+                        </div>
+                        <div id="p5">
+                            <img src="images/photo5.jpg" alt="Wedding Photo 5">
+                        </div>
+                    </div>
+                    <div id="p6">
+                        <img src="images/photo6.jpg" alt="Wedding Photo 6">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text -->
+            <div class="text" id="text2">
+                <p>No words are necessary between
+                    <br> two loving hearts.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section>
+            <div id="centerline">
+                <div id="line2"></div>
+            </div>
+            <div class="footer">
+                <div id="footerlogo">
+                    <div><img src="images/logo.png" alt="Logo"></div>
+                    <div id="copyright">
+                        <p>Powered by Yong</p>
+                        <p>2022 B&Y Copyright</p>
+                    </div>
+                </div>
+                <div class="footertext">
+                    <div id="quicklink">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="photos.html">PHOTOS</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">VENUE</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div id="hours">
+                        <h3>Hours</h3>
+                        <p>Weekdays: 09:00 - 18:00</p>
+                        <p>Weekend: 09:00 - 18:00
+                            <br>(Online Only)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>
