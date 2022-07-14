@@ -1,0 +1,131 @@
+body {
+    max-width: 1280px;
+    color: #D9D9D9;
+    margin: auto;
+    font-family: 'Marcellus', serif;
+}
+
+.container {
+    background-color: #1E1A1A;
+}
+
+/* NAVIGATION BAR */
+#nav_con {
+    width: 100%;
+}
+
+.navbar {
+    height: 5vh;
+    margin: auto;
+    padding: 1.5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E1A1A;
+}
+
+.navbar img {
+    width: 30%;
+    margin-left: 6%;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 18px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 1.25em;
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Croissant One', cursive;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #A4773D;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.icon {
+    display: none;
+}
+
+.overlay {
+    display: none;
+}
+
+/* CONTACT US SECTION */
+.contact {
+    width: 86%;
+    /* justify-content: space-between;
+    display: flex; */
+    margin: auto;
+}
+
+.cheader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centerline {
+    display: flex;
+    margin: 4% 0;
+    width: 50%;
+}
+
+.line {
+    height: 2px;
+    background-color: #A4773D;
+    width: 100%;
+    display: block;
+}
+
+/* #contact_us {
+    width: 50%;
+} */
+
+#contact_us h1 {
+    font-size: 1.8em;
+    margin-top: 1%;
+    font-family: 'Croissant One', cursive;
+}
+
+#contact_us p {
+    font-size: 1.2em;
+    margin-bottom: 1.8%;
+}
+
+/* Form Section */
+input,
+textarea {
+    width: 97%;
+    background-color: transparent;
+    border: #A4773D solid 1.5px;
+    padding: 1.2% 2%;
+    color: #D9D9D9;
+    font-family: 'Marcellus', serif;
+}
+
+input[type=submit] {
+    float: right;
+    width: 20%;
+    margin-top: 5%;
+    background-color: #A4773D;
+    border-radius: 30px;
+    padding: 1.2% 0;
+    font-size: 1em;
+    font-family: 'Croissant One', cursive;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Marcellus&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <section>
+            <div id="nav_con">
+                <div class="navbar">
+                    <div id="logo">
+                        <img src="images/logo.png" alt="LOGO">
+                    </div>
+                    <!-- Only Display on Mobile Version -->
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <img src="images/menu.png" alt="menu">
+                    </a>
+                    <!-- Only Display on Desktop Version -->
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="photos.html">PHOTOS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="venue.html">VENUE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">HOME</a>
+                    <a href="photos.html">PHOTOS</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="venue.html">VENUE</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </section>
+         <!-- CONTACT US SECTION -->
+         <section>
+            <div class="contact">
+                <div id="contact_us">
+                    <div class="cheader">
+                        <div><h1>Contact Us</h1></div>
+                        <div class="centerline">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <p>Please fill out the form if you are intersting in our sevices. We will contact you to tell more
+                        details.</p>
+                    <form action="">
+                        <p>Your Name</p>
+                        <input type="text" placeholder="Michael Lee" required>
+                        <p>Your Phone</p>
+                        <input type="tel" placeholder="01x-xxxx xxxx" required>
+                        <p>Your Email</p>
+                        <input type="text" placeholder="michael@gmail.com" required>
+                        <p>Your Message</p>
+                        <textarea rows="4" cols="50" name="comment" form="usrform"
+                            placeholder="Write down something you want to ask"></textarea>
+                        <div id="submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
