@@ -1,0 +1,187 @@
+body {
+    max-width: 1280px;
+    color: #D9D9D9;
+    margin: auto;
+    font-family: 'Marcellus', serif;
+}
+
+.container {
+    background-color: #1E1A1A;
+}
+
+/* NAVIGATION BAR */
+#nav_con {
+    width: 100%;
+}
+
+.navbar {
+    height: 5vh;
+    margin: auto;
+    padding: 1.5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E1A1A;
+}
+
+.navbar img {
+    width: 30%;
+    margin-left: 6%;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 18px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 1.25em;
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Croissant One', cursive;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #A4773D;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.icon {
+    display: none;
+}
+
+.overlay {
+    display: none;
+}
+
+/* Content */
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 2.5em;
+    font-family: 'Croissant One', cursive;
+}
+
+.text p {
+    font-size: 1.5em;
+}
+
+.abt1 {
+    display: flex;
+    width: 86%;
+    justify-content: center;
+}
+
+#txtp1 {
+    width: 40%;
+}
+
+/* PHOTO SECTION */
+#imgcenter {
+    margin: 8% 0 4% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    display: flex;
+    width: 90%;
+}
+
+.imgs {
+    width: 33.33%;
+    margin: 0 2.5%;
+}
+
+.imgs img {
+    width: 100%;
+    transition: .5s;
+}
+
+.imgs img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+#centerline {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+}
+
+#line2 {
+    height: 1px;
+    background-color: #A4773D;
+    width: 86%;
+    display: block;
+}
+
+.footer {
+    width: 86%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerlogo {
+    width: 70%;
+}
+
+#footerlogo p {
+    font-size: 1em;
+}
+
+#footerlogo img {
+    width: 15%;
+}
+
+.footertext {
+    display: flex;
+    width: 35%;
+}
+
+#quicklink {
+    width: 40%;
+}
+
+#quicklink ul,
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 1.5% 0 8% 0;
+    color: #D9D9D9;
+    font-size: 1em;
+}
+
+#hours {
+    width: 60%;
+    float: right;
+}
+
+#hours h3 {
+    margin-top: 0px;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+#hours p {
+    font-size: 1em;
+}
