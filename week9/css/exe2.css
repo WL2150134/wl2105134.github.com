@@ -1,0 +1,89 @@
+body {
+    margin: auto;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+td {
+    width: auto;
+    height: 120px;
+}
+
+td h1 {
+    margin-bottom: 1%;
+}
+
+td p {
+    margin: 4% 0 0 0;
+}
+
+.empty {
+    empty-cells: show;
+    border: none;
+}
+
+.purple {
+    background-color: #d0c9e0;
+    color: #57398d;
+    border: #a091bf solid 2px;
+}
+
+.blue2 {
+    background-color: #bcdeef;
+    color: #1490c2;
+    border: #5baed3 solid 2px;
+}
+
+.blue3 {
+    background-color: #b1d1e1;
+    color: #075e82;
+    border: #568ea9 solid 2px;
+}
+
+.yellow2 {
+    background-color: #d4d5c0;
+    color: #697034;
+    border: #979c67 solid 2px;
+}
+
+.yellow3 {
+    background-color: #e3e4cd;
+    color: #9fa641;
+    border: #9fac5c solid 2px;
+}
+
+.green2 {
+    background-color: #cce9e7;
+    color: #13ada6;
+    border: #5ec5bf solid 2px;
+}
+
+.red {
+    background-color: #f1cfd5;
+    color: #ba0c2a;
+    border: #d4686b solid 2px;
+}
+
+/* Empty Cell */
+.blue1 {
+    background-color: #daecf6;
+}
+
+.yellow1 {
+    background-color: #eeefe3;
+}
+
+.green1 {
+    background-color: #e4f3f1;
+}
