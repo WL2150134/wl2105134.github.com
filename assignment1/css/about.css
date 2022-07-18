@@ -451,7 +451,7 @@ a {
 
     /* PHOTO SECTION */
     .photo {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 85%;
     }
 
@@ -614,7 +614,7 @@ a {
 
     /* PHOTO SECTION */
     .photo {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 85%;
     }
 

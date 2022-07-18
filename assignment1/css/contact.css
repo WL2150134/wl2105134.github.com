@@ -307,7 +307,11 @@ a {
     }
 
     .ctus {
-        width: 70%;
+        width: 50%;
+    }
+
+    .ctus img{
+        width: 80%;
     }
 
     /* Form Section */
