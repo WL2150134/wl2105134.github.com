@@ -24,8 +24,18 @@ body {
     background-color: #1E1A1A;
 }
 
-.navbar img {
+#logo {
     width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#logo a {
+    margin: 0;
+}
+
+.navbar img {
+    width: 38%;
     margin-left: 6%;
 }
 
@@ -222,7 +232,7 @@ a {
 
     /* Navigation Bar */
     .navbar img {
-        width: 25%;
+        width: 40%;
     }
 
     .navbar ul li a {
@@ -282,7 +292,7 @@ a {
     }
 
     .navbar img {
-        width: 25%;
+        width: 45%;
     }
 
     .navbar ul li {
@@ -290,7 +300,7 @@ a {
     }
 
     .navbar ul li a {
-        font-size: 0.9em;
+        font-size: 1.05em;
     }
 
     /* CONTACT US SECTION */
@@ -310,7 +320,7 @@ a {
         width: 50%;
     }
 
-    .ctus img{
+    .ctus img {
         width: 80%;
     }
 
@@ -350,11 +360,11 @@ a {
 
     /* Navigation Bar*/
     #logo {
-        width: 40%;
+        width: 30%;
     }
 
     #logo img {
-        width: 22%;
+        width: 75%;
     }
 
     .navbar ul li {
@@ -370,7 +380,7 @@ a {
     }
 
     .icon img {
-        width: 45%;
+        width: 40%;
         margin-right: 6%;
         float: right;
     }
@@ -514,7 +524,11 @@ a {
 
     /* Navigation Bar*/
     #logo {
-        width: 35%;
+        width: 30%;
+    }
+
+    #logo img {
+        width: 85%;
     }
 
     .navbar ul li {
@@ -530,7 +544,7 @@ a {
     }
 
     .icon img {
-        width: 45%;
+        width: 50%;
         margin-right: 6%;
         float: right;
     }

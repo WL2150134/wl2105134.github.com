@@ -24,8 +24,18 @@ body {
     background-color: #1E1A1A;
 }
 
-.navbar img {
+#logo {
     width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#logo a {
+    margin: 0;
+}
+
+.navbar img {
+    width: 38%;
     margin-left: 6%;
 }
 
@@ -179,12 +189,13 @@ a {
 
     /* Navigation Bar */
     .navbar img {
-        width: 25%;
+        width: 40%;
     }
 
     .navbar ul li a {
         font-size: 1em;
     }
+
 
     /* VENUE */
     .text h1 {
@@ -228,7 +239,7 @@ a {
     }
 
     .navbar img {
-        width: 25%;
+        width: 45%;
     }
 
     .navbar ul li {
@@ -236,7 +247,7 @@ a {
     }
 
     .navbar ul li a {
-        font-size: 0.9em;
+        font-size: 1.05em;
     }
 
     /* VENUE */
@@ -277,11 +288,11 @@ a {
 
     /* Navigation Bar*/
     #logo {
-        width: 40%;
+        width: 30%;
     }
 
     #logo img {
-        width: 22%;
+        width: 75%;
     }
 
     .navbar ul li {
@@ -297,7 +308,7 @@ a {
     }
 
     .icon img {
-        width: 45%;
+        width: 40%;
         margin-right: 6%;
         float: right;
     }
@@ -422,11 +433,15 @@ a {
 }
 
 /* Mobile 2*/
-@media screen and (min-width:320px) and (max-width: 480px){
+@media screen and (min-width:320px) and (max-width: 480px) {
 
-     /* Navigation Bar*/
-     #logo {
-        width: 35%;
+    /* Navigation Bar*/
+    #logo {
+        width: 30%;
+    }
+
+    #logo img {
+        width: 85%;
     }
 
     .navbar ul li {
@@ -442,7 +457,7 @@ a {
     }
 
     .icon img {
-        width: 45%;
+        width: 50%;
         margin-right: 6%;
         float: right;
     }
@@ -493,8 +508,8 @@ a {
         color: #A4773D;
     }
 
-     /* VENUE */
-     .text h1 {
+    /* VENUE */
+    .text h1 {
         font-size: 1.6em;
     }
 
@@ -522,8 +537,8 @@ a {
         margin-top: 2%;
     }
 
-     /* Footer */
-     #line2 {
+    /* Footer */
+    #line2 {
         width: 83%;
     }
 
