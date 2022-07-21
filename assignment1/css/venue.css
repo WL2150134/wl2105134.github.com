@@ -24,8 +24,18 @@ body {
     background-color: #1E1A1A;
 }
 
-.navbar img {
+#logo {
     width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#logo a {
+    margin: 0;
+}
+
+.navbar img {
+    width: 38%;
     margin-left: 6%;
 }
 
@@ -42,7 +52,7 @@ body {
     font-size: 1.25em;
     text-shadow: 2px 2px 5px black;
     font-family: 'Croissant One', cursive;
-}   
+}
 
 .navbar ul li::after {
     content: '';
@@ -65,4 +75,508 @@ body {
 
 .overlay {
     display: none;
+}
+
+/* VENUE */
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 2.5em;
+    font-family: 'Croissant One', cursive;
+}
+
+.venue {
+    display: flex;
+    width: 86%;
+    justify-content: space-between;
+    margin: 4% 7%;
+}
+
+.picture {
+    width: 45%;
+}
+
+.picture img {
+    width: 100%;
+}
+
+.content {
+    margin-left: 5%;
+    width: 55%;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.content p {
+    font-size: 1.15em;
+}
+
+/* Footer */
+#centerline {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+}
+
+#line2 {
+    height: 1px;
+    background-color: #A4773D;
+    width: 86%;
+    display: block;
+}
+
+.footer {
+    width: 86%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerlogo {
+    width: 70%;
+}
+
+#footerlogo p {
+    font-size: 1em;
+}
+
+#footerlogo img {
+    width: 15%;
+}
+
+.footertext {
+    display: flex;
+    width: 35%;
+}
+
+#quicklink {
+    width: 40%;
+}
+
+#quicklink ul,
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 1.5% 0 8% 0;
+    color: #D9D9D9;
+    font-size: 1em;
+}
+
+#hours {
+    width: 60%;
+    float: right;
+}
+
+#hours h3 {
+    margin-top: 0px;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+#hours p {
+    font-size: 1em;
+}
+
+/* Desktop 2 */
+@media screen and (min-width:800px) and (max-width: 1024px) {
+
+    /* Navigation Bar */
+    .navbar img {
+        width: 40%;
+    }
+
+    .navbar ul li a {
+        font-size: 1em;
+    }
+
+
+    /* VENUE */
+    .text h1 {
+        font-size: 2.2em;
+    }
+
+    .content h3 {
+        font-size: 1.25em;
+    }
+
+    .content p {
+        font-size: 1.05em;
+    }
+
+    /* Footer */
+    #footerlogo p {
+        font-size: 0.85em;
+    }
+
+    #quicklink ul,
+    li,
+    a {
+        font-size: 0.9em;
+    }
+
+    #hours h3 {
+        font-size: 0.9em;
+    }
+
+    #hours p {
+        font-size: 0.9em;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width:600px) and (max-width: 800px) {
+
+    /* Navigation Bar */
+    #logo {
+        width: 30%;
+    }
+
+    .navbar img {
+        width: 45%;
+    }
+
+    .navbar ul li {
+        margin: 0 8px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.05em;
+    }
+
+    /* VENUE */
+    .text h1 {
+        font-size: 2em;
+    }
+
+    .content h3 {
+        font-size: 1em;
+    }
+
+    .content p {
+        font-size: 0.85em;
+    }
+
+    /* Footer */
+    #footerlogo p {
+        font-size: 0.85em;
+    }
+
+    #quicklink ul,
+    li,
+    a {
+        font-size: 0.9em;
+    }
+
+    #hours h3 {
+        font-size: 0.9em;
+    }
+
+    #hours p {
+        font-size: 0.9em;
+    }
+}
+
+/* Mobile 1*/
+@media screen and (min-width:480px) and (max-width: 600px) {
+
+    /* Navigation Bar*/
+    #logo {
+        width: 30%;
+    }
+
+    #logo img {
+        width: 75%;
+    }
+
+    .navbar ul li {
+        display: none;
+    }
+
+    .icon {
+        position: absolute;
+        right: 0;
+        display: block;
+        margin: auto;
+        width: 20%;
+    }
+
+    .icon img {
+        width: 40%;
+        margin-right: 6%;
+        float: right;
+    }
+
+    /* Mobile Menu */
+    .overlay {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 2em;
+        font-family: 'Croissant One', cursive;
+        color: #D9D9D9;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #A4773D;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        color: #A4773D;
+    }
+
+    /* VENUE */
+    .text h1 {
+        font-size: 1.6em;
+    }
+
+    .venue {
+        flex-direction: column;
+    }
+
+    .picture {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+
+    .content h3 {
+        font-size: 1.25em;
+        margin-bottom: 3%;
+    }
+
+    .content p {
+        font-size: 1em;
+        margin-top: 2%;
+    }
+
+    /* Footer */
+    #line2 {
+        width: 83%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footertext {
+        width: 100%;
+    }
+
+    #quicklink {
+        display: none;
+    }
+
+    #hours {
+        width: 80%;
+        margin: 2.5%;
+    }
+
+    #hours p {
+        font-size: 0.8em;
+    }
+
+    #footerlogo {
+        display: flex;
+        width: 90%;
+    }
+
+    #copyright {
+        width: 60%;
+    }
+
+    #footerlogo p {
+        font-size: 0.7em;
+    }
+
+    #footerlogo img {
+        width: 40%
+    }
+}
+
+/* Mobile 2*/
+@media screen and (min-width:320px) and (max-width: 480px) {
+
+    /* Navigation Bar*/
+    #logo {
+        width: 30%;
+    }
+
+    #logo img {
+        width: 85%;
+    }
+
+    .navbar ul li {
+        display: none;
+    }
+
+    .icon {
+        position: absolute;
+        right: 0;
+        display: block;
+        margin: auto;
+        width: 20%;
+    }
+
+    .icon img {
+        width: 50%;
+        margin-right: 6%;
+        float: right;
+    }
+
+    /* Mobile Menu */
+    .overlay {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 2em;
+        font-family: 'Croissant One', cursive;
+        color: #D9D9D9;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #A4773D;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        color: #A4773D;
+    }
+
+    /* VENUE */
+    .text h1 {
+        font-size: 1.6em;
+    }
+
+    .venue {
+        flex-direction: column;
+    }
+
+    .picture {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+
+    .content h3 {
+        font-size: 1.05em;
+        margin-bottom: 3%;
+    }
+
+    .content p {
+        font-size: 0.85em;
+        margin-top: 2%;
+    }
+
+    /* Footer */
+    #line2 {
+        width: 83%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footertext {
+        width: 100%;
+    }
+
+    #quicklink {
+        display: none;
+    }
+
+    #hours {
+        width: 80%;
+        margin: 2.5%;
+    }
+
+    #hours p {
+        font-size: 0.8em;
+    }
+
+    #footerlogo {
+        display: flex;
+        width: 90%;
+    }
+
+    #copyright {
+        width: 60%;
+    }
+
+    #footerlogo p {
+        font-size: 0.7em;
+    }
+
+    #footerlogo img {
+        width: 40%
+    }
 }

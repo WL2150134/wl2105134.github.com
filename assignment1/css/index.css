@@ -10,6 +10,10 @@ body {
 }
 
 /* NAVIGATION BAR */
+#home2p {
+    display: none;
+}
+
 .banner {
     position: relative;
 }
@@ -17,7 +21,7 @@ body {
 .banner img {
     width: 100%;
     height: 100%;
-    opacity: 0.65;
+    opacity: 0.85;
 }
 
 #nav_con {
@@ -37,9 +41,19 @@ body {
     opacity: 0.65;
 }
 
-.navbar img {
+#logo {
     width: 30%;
-    margin-left: 6%;
+    display: flex;
+    align-items: center;
+}
+
+#logo a {
+    margin: 0;
+}
+
+.navbar img {
+    width: 38%;
+    margin: 6%;
 }
 
 .navbar ul li {
@@ -294,8 +308,12 @@ a {
 @media screen and (min-width:800px) and (max-width: 1024px) {
 
     /* Navigation Bar */
+    #home2p {
+        display: none;
+    }
+
     .navbar img {
-        width: 25%;
+        width: 40%;
     }
 
     .navbar ul li a {
@@ -357,12 +375,16 @@ a {
 @media screen and (min-width:600px) and (max-width: 800px) {
 
     /* Navigation Bar */
+    #home2p {
+        display: none;
+    }
+
     #logo {
         width: 30%;
     }
 
     .navbar img {
-        width: 25%;
+        width: 45%;
     }
 
     .navbar ul li {
@@ -370,7 +392,7 @@ a {
     }
 
     .navbar ul li a {
-        font-size: 0.9em;
+        font-size: 1.05em;
     }
 
     .overlay {
@@ -430,20 +452,26 @@ a {
 @media screen and (min-width:480px) and (max-width: 600px) {
 
     /* Navigation Bar*/
+    #home1p {
+        display: none;
+    }
+
+    #home2p {
+        display: block;
+    }
+
     #logo {
         width: 30%;
     }
 
     #logo img {
-        width: 25%;
+        width: 75%;
     }
 
     .navbar ul li {
         display: none;
     }
-    .navbar{
-        height: 3.5vh;
-    }
+
     .icon {
         position: absolute;
         right: 0;
@@ -453,7 +481,7 @@ a {
     }
 
     .icon img {
-        width: 35%;
+        width: 40%;
         margin-right: 6%;
         float: right;
     }
@@ -633,18 +661,26 @@ a {
 @media screen and (min-width:320px) and (max-width: 480px) {
 
     /* Navigation Bar*/
+    #home1p {
+        display: none;
+    }
+
+    #home2p {
+        display: block;
+    }
+
     #logo {
-        width: 15%;
+        width: 30%;
     }
-    #logo img{
-        width: 50%;
+
+    #logo img {
+        width: 85%;
     }
+
     .navbar ul li {
         display: none;
     }
-    .navbar{
-        height: 3vh;
-    }
+
     .icon {
         position: absolute;
         right: 0;
@@ -654,7 +690,7 @@ a {
     }
 
     .icon img {
-        width: 35%;
+        width: 50%;
         margin-right: 6%;
         float: right;
     }
